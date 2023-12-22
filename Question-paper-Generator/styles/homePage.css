@@ -1,0 +1,126 @@
+body {
+    background-image: url(../bg-img1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 30px;
+}
+
+.container.board {
+    margin-top: 100px;
+}
+
+.submit-button {
+    background-color: #ffff00;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 50px;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px rgba(21, 12, 32, 0.8);
+    border: none;
+    transition: background-color 0.5s, margin 0.5s, box-shadow 0.5s;
+}
+
+.submit-button:active {
+    background-color: green;
+    box-shadow: none;
+    margin-top: 58px;
+    margin-left: 8px;
+}
+
+.error {
+    font-size: 18px;
+    text-align: center;
+}
+
+.Question {
+    border-radius: 5px;
+    line-height: 18px;
+    font-size: 18px;
+    font-weight:bolder;
+    /* background-color: black; */
+    color: white;
+    box-shadow: 10px 10px 15px rgb(61, 57, 66);
+}
+
+.question {
+    margin: 0px;
+    background-color: rgb(53, 53, 150);
+    color: white;
+    text-align: center;
+    height: max-content;
+}
+
+.optn1 {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.ans {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgb(66, 153, 66);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ans-container {
+    padding: 8px;
+
+}
+
+.result-container {
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: -20px; 
+}
+
+.result {
+    display: none;
+}
+
+.result.board {
+    position: fixed;
+    top: 60px;
+    z-index: 100;
+    width: 98.5%;
+    display: initial;
+    background-color: white;    
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -60px;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 12px solid black;
+}
+
+
+.question-container {
+    line-height: 10px;
+    margin-bottom: -18px;
+}
+
+.correct-ans {
+    color: green;
+    font-size: 15px;
+}
