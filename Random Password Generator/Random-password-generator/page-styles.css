@@ -1,0 +1,63 @@
+body {
+    background-image: url(bg-img.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    /* background-color: yellow; */
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.output-msg {
+    background-color: rgb(158, 78, 78);
+    font-size: 25px;
+}
+
+section {
+    min-height: 400px;    
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-columns: 1000px;
+    justify-content: center;
+    align-content: center;
+}
+
+.input-container {
+    background-color: green;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+}
+
+.output-msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input {
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.generate-button {
+    font-size: 18px;
+    border: none;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.generate-button:active {
+    background-color: darkgray;
+}
+
+
+
+
